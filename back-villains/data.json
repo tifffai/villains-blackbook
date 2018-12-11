@@ -29,4 +29,10 @@ const villains = [
         "archnemesis": "Beast",
         "description": "Gaston's a rude, vain, shallow hunter who doesn’t like taking ‘no’ for an answer. Worst of all is his jealous streak, which is when he goes for the jugular. He tried to have Maurice, Belle’s father, committed to an insane asylum unless she married him. "
     },
+    {
+        "name": "Jafar",
+        "movie": "Aladdin",
+        "archnemesis": "Aladdin",
+        "description": "Jafar craves power and will do just about anything for it."
+    }
 ]
