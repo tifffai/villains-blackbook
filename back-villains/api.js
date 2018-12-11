@@ -1,7 +1,7 @@
 const express = require('express');
 const Joi = require('joi');
 const app = express();
-// const villains = require('./data.json')
+
 
 const villains = [
     {
@@ -63,7 +63,7 @@ app.get('/villains/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const villain = villains.find(v => v.id === id)
     if(!villain) {
-        return res.send(404, "Oh no! That's not a villain!")
+        return res.status(404).send("Oh no! That's not a villain!")
     }
     return res.send([villain])
 })
@@ -79,6 +79,40 @@ app.post('/villains', (req, res) => {
     villains.push(villain)
 
     return res.send(villain)
+})
+
+app.put('/villains/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const villain = villains.find(v => v.id === id)
+    if(!villain) {
+        return res.status(404).send("Oh no! That's not a villain!")
+    }
+
+    const schema = {
+        name: Joi.string().required(),
+        movie: Joi.string().required(),
+        archnemesis: Joi.string().required(),
+        description: Joi.string().required()
+    }
+
+    const valid = Joi.validate(req.body, schema);
+    const error = valid.error
+    if (error) {
+        return res.status(400).send(error.details[0].message);
+    }
+
+    const name = req.body.name
+    const movie = req.body.movie
+    const archnemesis = req.body.archnemesis
+    const description = req.body.description
+
+    villain.name = name
+    villain.movie = movie
+    villain.archnemesis = archnemesis
+    villain.description = description
+
+    return res.send(villain)
+
 })
 
 app.listen(5000, () => {
