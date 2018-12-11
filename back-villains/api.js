@@ -68,6 +68,19 @@ app.get('/villains/:id', (req, res) => {
     return res.send([villain])
 })
 
+app.post('/villains', (req, res) => {
+    const id = req.body.id
+    const name = req.body.name
+    const movie = req.body.movie
+    const archnemesis = req.body.archnemesis
+    const description = req.body.description
+
+    const villain = {id: id, name: name, movie: movie, archnemesis: archnemesis, description: description}
+    villains.push(villain)
+
+    return res.send(villain)
+})
+
 app.listen(5000, () => {
     console.log('listening on port 5000')
 })
