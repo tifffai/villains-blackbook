@@ -1,4 +1,4 @@
-const villains = [
+[
     {
         "name": "Cruella de Vil",
         "movie": "101 Dalmations",
