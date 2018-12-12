@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Navbar />
         <div id="villains-list">
           <Villains />
         </div>

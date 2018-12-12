@@ -38,10 +38,11 @@
 
 body {
   background-color: black;
+  /* background-image: linear-gradient(to bottom right, #2D1468,#50348B, #D89B26); */
 }
 
 #header-box {
-  background-color: #2D1468;
+  /* background-color: #2D1468; */
   background-image: linear-gradient(to bottom right, #2D1468,#50348B, #D89B26);
   text-align: center;
   padding-top: 15px;
@@ -58,14 +59,16 @@ body {
 
 #each-villain {
   color: white;
-  text-align: center;
   width: 300px;
-  padding: 10px;
   margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 8px 0px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
+
+
 #each-villain img {
-  width: 200px;
+  width: 300px;
 }
 
 #each-villain h3 {
@@ -75,4 +78,20 @@ body {
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
+}
+
+#nav-box {
+  text-align: center;
+  font-size: 2em;
+}
+
+#nav-box a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-box a:hover {
+  color: black;
+  background-color: #D89B26;
+  font-weight: 400;
 }

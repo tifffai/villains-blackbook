@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav id="nav-box">
             <a href="localhost:3000">HOME</a>
         </nav>
     )
