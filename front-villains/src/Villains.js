@@ -49,6 +49,22 @@ const Villains = () => {
             archnemesis: "Aladdin",
             description: "Jafar craves power and will do just about anything for it.",
             image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/6956dbc5-c031-4b1c-93c4-f312a6a0158f/d80klfr-2123d623-d335-44c0-911d-422145c798fc.jpg/v1/fill/w_894,h_894,q_70,strp/jafar_by_mariooscargabriele_d80klfr-pre.jpg"
+        },
+        {
+            id: 7,
+            name: "Yzma",
+            movie: "Emperor's New Groove",
+            archnemesis: "Kuzco",
+            description: "The main villain of the Emperor's New Groove franchise, Yzma is malicious and power hungry. When Kuzco abruptly and callously fires her that she turns on him, deciding to kill him, then fill the power vacuum left in his wake and become empress.",
+            image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/6956dbc5-c031-4b1c-93c4-f312a6a0158f/d83n3k7-826057cb-c749-4ca0-8df1-4727de51012d.jpg/v1/fill/w_894,h_894,q_70,strp/yzma_by_mariooscargabriele_d83n3k7-pre.jpg"
+        },
+        {
+            id: 8,
+            name: "Maleficent",
+            movie: "Sleeping Beauty",
+            archnemesis: "Aurora",
+            description: "Maleficent is an evil fairy and the main antagonist of Disney's animated classic, Sleeping Beauty. Maleficent refers to herself as the Mistress of All Evil, a title that few, if any, could dispute. She is cold, calculating, ruthless and spiteful; often she has performed despicable acts of cruelty simply because she can rather than for any real purpose. ",
+            image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/6956dbc5-c031-4b1c-93c4-f312a6a0158f/d7zutqo-fcac860a-4520-4503-97b9-8d9c6e2df82b.jpg/v1/fill/w_894,h_894,q_70,strp/maleficent_by_mariooscargabriele_d7zutqo-pre.jpg"
         }
     ]
 
