@@ -55,3 +55,24 @@ body {
   text-shadow: black;
   padding-bottom: 100px;
 }
+
+#each-villain {
+  color: white;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+}
+
+#each-villain img {
+  width: 200px;
+}
+
+#each-villain h3 {
+}
+
+#villains-list {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
