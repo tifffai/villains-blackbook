@@ -115,6 +115,19 @@ app.put('/villains/:id', (req, res) => {
 
 })
 
+app.delete('/villains/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const villain = villains.find(v => v.id === id)
+    if(!villain) {
+        return res.status(404).send("Oh no! That's not a villain!")
+    }
+
+    const index = villains.indexOf(villain);
+    villains.splice(index, 1);
+    return res.send(villain);
+    
+})
+
 app.listen(5000, () => {
     console.log('listening on port 5000')
 })
